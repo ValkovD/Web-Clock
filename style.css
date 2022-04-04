@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #558242;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container1 {
+  background-color: #425582;
+  /* background-color: #334e27; */
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+
+h1,
+h2 {
+  text-align: center;
+
+  /* font-size: 4rem; */
+}
+
+#container2 {
+  /* background-color: #6f4282; */
+  background-color: #334e27;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#milsec-a,
+#milsec-b {
+  font-size: 1.2rem;
+}
+
+/* 
+span {
+  /* margin-left: 2px;
+  margin-right: 2px; */
+/* padding: 5px;
+  width: 10px; */
+
+
+#stopwatch-btns {
+  text-align: center;
+  padding: 5px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+
+#reset {
+  background-color: #824255;
+}
+
+#start {
+  background-color: #42824f;
+
+}
+
+#pause {
+  width: 90px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  background-color: #6f4282;
+}
+
+#lap {
+  /* background-color: #758242; */
+  background-color: #425582;
+}
+
+ul {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#container-3 {
+  text-align: center;
+  background-color: #824255;
+  background-color: #6f4282;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.alert {
+  background-color: #425582;
+
+}
+
+#numpad {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.num {
+  background-color: #558242;
+  text-align: center;
+}
+
+#reset-timer {
+  background-color: #824255;
+}
+
+#start-timer {
+  background-color: #42824f;
+}
+
+#stop-timer {
+  background-color: #425582;
+}
+
+.container-4 {
+  
+  text-align: center;
+  
+}
