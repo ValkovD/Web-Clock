@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Clock</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #558242;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #container1 {
+      background-color: #425582;
+      /* background-color: #334e27; */
+      margin-top: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+
+      /* font-size: 4rem; */
+    }
+
+    #container2 {
+      /* background-color: #6f4282; */
+      background-color: #334e27;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #milsec-a,
+    #milsec-b {
+      font-size: 1.2rem;
+    }
+
+    /* 
+    span {
+      /* margin-left: 2px;
+      margin-right: 2px; */
+    /* padding: 5px;
+      width: 10px; */
+
+
+    #stopwatch-btns {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      font-size: 1.3rem;
+    }
+
+    #reset {
+      background-color: #824255;
+    }
+
+    #start {
+      background-color: #42824f;
+
+    }
+
+    #pause {
+      width: 90px;
+      height: 60px;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      background-color: #6f4282;
+    }
+
+    #lap {
+      /* background-color: #758242; */
+      background-color: #425582;
+    }
+
+    ul {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    #container-3 {
+      text-align: center;
+      background-color: #824255;
+      background-color: #6f4282;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .alert {
+      background-color: #425582;
+
+    }
+
+    #numpad {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .num {
+      background-color: #558242;
+      text-align: center;
+    }
+
+    #reset-timer {
+      background-color: #824255;
+    }
+
+    #start-timer {
+      background-color: #42824f;
+    }
+
+    #stop-timer {
+      background-color: #425582;
+    }
+
+    .container-4 {
+      height: 577px;
+      background-image: url(/img/clock3.jpg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container1">
+    <h1>--:--:--</h1>
+    <h2>--- -- -- ----</h2>
+  </div>
+  <div id="container2">
+    <h2>Stopwatch</h2>
+    <h2 id="stopwatch">
+      <span id="min-a">0</span><span id="min-b">0</span> :
+      <span id="seca">0</span><span id="secb">0</span> :
+      <span id="milsec-a">0</span><span id="milsec-b">0</span>
+    </h2>
+    <div id="stopwatch-btns">
+      <button class="btn" id="reset" style="display: none;">reset</button>
+      <button class="btn" id="start">start</button>
+      <button id="pause" style="display: none;">pause</button>
+      <button class="btn" id="lap" style="display: none;">lap</button>
+    </div>
+    <ul id="laps">
+      <!-- li dynamicly created and inserted by js -->
+
+    </ul>
+  </div>
+  <div id="container-3">
+    <div class="alert" style="display: none;">
+      <h3>Time is up!!!!!!!</h3>
+    </div>
+    <h2>Timer</h2>
+
+    <h2>
+      <span id="timer-h-a">-</span><span id="timer-h-b">-</span><span>h</span>
+      <span id="timer-m-a">-</span><span id="timer-m-b">-</span><span>m</span>
+      <span id="timer-s-a">-</span><span id="timer-s-b">-</span><span>s</span>
+    </h2>
+    <div id="numpad">
+      <div>
+        <input type="button" value="1" class="btn num" id="1">
+        <input type="button" value="2" class="btn num" id="2">
+        <input type="button" value="3" class="btn num" id="3">
+      </div>
+      <div>
+        <input type="button" value="4" class="btn num" id="4">
+        <input type="button" value="5" class="btn num" id="5">
+        <input type="button" value="6" class="btn num" id="6">
+      </div>
+      <div>
+        <input type="button" value="7" class="btn num" id="7">
+        <input type="button" value="8" class="btn num" id="8">
+        <input type="button" value="9" class="btn num" id="9">
+      </div>
+      <div>
+        <input type="button" value="clear" class="btn num clear" id="clear">
+        <input type="button" value="0" class="btn num" id="0">
+        <input type="button" value="del" class="btn num del" id="del">
+      </div>
+      <div>
+        <button class="btn" id="reset-timer" style="display: none;">reset</button>
+        <button class="btn" id="start-timer" style="display: none;">start</button>
+        <button class="btn" id="stop-timer" style="display: none;">stop</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-4">
+    <!--Just image-->
+
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>
