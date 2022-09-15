@@ -4,30 +4,42 @@
 }
 
 body {
-  background-color: #558242;
+  background-color: #9893da;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+header h3 {
+  font-size: 3rem;
+}
+
 #container1 {
-  background-color: #425582;
-  /* background-color: #334e27; */
-  margin-top: 50px;
+  border: 1px solid #f72585;
+  margin: 5px auto;
+  width: 250px;
+  background-color: #297373;
+  border-radius: 5px;
+  /* margin-top: 50px; */
   padding-top: 5px;
-  padding-bottom: 5px
+  padding-bottom: 5px;
 }
 
 h1,
 h2 {
   text-align: center;
-
-  /* font-size: 4rem; */
 }
 
 #container2 {
-  /* background-color: #6f4282; */
-  background-color: #334e27;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border: 1px solid #f72585;
+  margin: 5px auto;
+  width: 250px;
+  background-color: #297373;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #milsec-a,
@@ -35,13 +47,9 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* 
-span {
-  /* margin-left: 2px;
-  margin-right: 2px; */
-/* padding: 5px;
-  width: 10px; */
-
+#laps {
+  list-style: none;
+}
 
 #stopwatch-btns {
   text-align: center;
@@ -56,7 +64,7 @@ span {
 }
 
 #reset {
-  background-color: #824255;
+  background-color: #f72585;
 }
 
 #start {
@@ -69,12 +77,11 @@ span {
   height: 60px;
   border-radius: 50px;
   font-size: 1.3rem;
-  background-color: #6f4282;
+  background-color: #9893da;
 }
 
 #lap {
-  /* background-color: #758242; */
-  background-color: #425582;
+  background-color: #9893da;
 }
 
 ul {
@@ -83,11 +90,13 @@ ul {
 }
 
 #container-3 {
+  border: 1px solid #f72585;
+  margin: 5px auto;
+  width: 250px;
+  background-color: #297373;
+  border-radius: 5px;
   text-align: center;
-  background-color: #824255;
-  background-color: #6f4282;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
 
 .alert {
@@ -101,12 +110,12 @@ ul {
 }
 
 .num {
-  background-color: #558242;
+  background-color: #9893da;
   text-align: center;
 }
 
 #reset-timer {
-  background-color: #824255;
+  background-color: #f72585;
 }
 
 #start-timer {
@@ -114,11 +123,30 @@ ul {
 }
 
 #stop-timer {
-  background-color: #425582;
+  background-color: #8983da;
 }
 
-.container-4 {
-  
+footer {
+  width: 8rem;
+  /* height: 6rem; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer p {
   text-align: center;
-  
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+#logo-text {
+  font-family: 'Orbitron', sans-serif;
 }
