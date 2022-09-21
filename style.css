@@ -109,6 +109,10 @@ ul {
   margin-bottom: 5px;
 }
 
+#numpad div {
+  margin: 5px 0;
+}
+
 .num {
   background-color: #9893da;
   text-align: center;
